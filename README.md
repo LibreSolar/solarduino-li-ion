@@ -1,6 +1,8 @@
 # Solarduino Li-Ion
 Solar charge controller with integrated 12 V Li-Ion BMS
 
+**Remark:** This charge controller is not maintained anymore and firmware + hardware might contain serious bugs. Use at your own risk!
+
 Features so far: 
 
 - 12 V LiFePO4 BMS (4 cells)
@@ -18,6 +20,9 @@ Built-in protection:
 - PV short circuit
 - PV reverse polarity (via diode)
 - Battery reverse polarity (destructive, fuse is blown)
+
+# Firmware
+The last version of the firmware based on Arduino can be found in the firmware directory.
 
 # Known issues
 - The current measurement using the INA168 does not work properly. The output should not be directly connected to the ADC, but should be buffed using an Op-amp in between.
